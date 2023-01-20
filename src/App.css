@@ -1,0 +1,165 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body{
+  background-color: #6a6c70;
+}
+.App {
+  display: flex;
+  justify-content: center;
+}
+.title {
+  font-size: 3em;
+  color: #fff;
+}
+.calculatrice {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(165, 68, 255);
+  border-radius: 10px;
+  padding: 0;
+  padding-bottom: 15px;
+
+}
+.calculatrice input{
+  border-radius: 10px 10px 0 0;
+  border:  1px solid  rgb(165, 68, 255);
+  color:  rgb(165, 68, 255);
+  padding: 5px;
+}
+.calculatrice > .btn {
+  width:80px;
+  height: 60px;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 3px;
+  border-radius: 5px;
+  border: none;
+  color:  rgb(165, 68, 255);
+}
+.btn:hover{
+  background-color: rgba(230, 110, 101, 0.637);
+  color: #fff;
+}
+.btn-equal {
+  width:160px;
+  height: 60px;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 3px;
+}
+.result{
+  width: 100%;
+  height: 50px;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.actions{
+  width: 100%;
+}
+.actions .btn{
+  width:60px;
+  height: 50px;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 3px;
+  border-radius: 5px;
+  border: none;
+  color:  rgb(165, 68, 255);
+}
+
+.history {
+  background-color: #fff;
+
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  overflow: auto;
+  margin-top: 10px;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.history .close{
+  font-size: 1.3em;
+  position: absolute;
+  font-family: sans-serif;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+.history .close:hover{
+  color: rgb(104, 19, 19);
+  
+}
+.history {
+  background-color: rgb(236, 92, 99);
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  overflow: auto;
+  margin-top: 10px;
+  color: #fff;
+  box-shadow: 2px 2px 2px 2px rgb(128, 124, 124);
+}
+.btn-history{
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  margin-bottom: 10px;
+  
+}
+.btn-history:active{
+  transform: scale(0.9);
+}
+.btn-history:hover{
+  background-color:  rgb(165, 68, 255);
+  color: #fff;
+}
+.hidden{
+  display: none;
+}
